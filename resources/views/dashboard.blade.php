@@ -11,6 +11,7 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{ Auth::user()->name }}
                 </div>
+                <a href="{{ route('category.index') }}">Categories</a>
             </div>
         </div>
     </div>
