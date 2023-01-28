@@ -68,4 +68,14 @@ class categoryController extends Controller
         ]);
         return redirect()->route('category.index');
     }
+
+    //__Delete method
+
+    public function destroy($id)
+    {
+        //DB::table('categories')->where('id', $id)->delete();
+        //$category = category::find($id);
+        category::destroy($id);
+        return redirect()->back();
+    }
 }

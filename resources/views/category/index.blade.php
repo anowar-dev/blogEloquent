@@ -11,8 +11,8 @@
         <div class="row mt-5">
             <div class="col-3"></div>
             <div class="col-8 card p-4">
-                <span class="btn btn-light me-auto fw-bold text-dark">All Category Table</span>
-                <a class="btn btn-primary ms-auto mb-2" href="{{ route('category.create') }}">Add Category</a>
+                <span class="bg-light fw-bold text-dark py-2">All Category Table</span>
+                <a class="btn btn-primary me-auto my-4" href="{{ route('category.create') }}">Add Category</a>
                 <table class="table table-response table-bordered">
                     <thead>
                         <tr class="bg-light">
@@ -29,7 +29,7 @@
                             <td>{{ $row->category_name }}</td>
                             <td>{{ $row->category_slug }}</td>
                             <td class="btn btn-info bg-info mx-3"><a class="text-dark fw-semibold" href="{{ route('category.edit', $row->id) }}">Edit</a></td>
-                            <td class="btn btn-danger bg-danger"><a class="text-white fw-semibold" href="">Delete</a></td>
+                            <td class="btn btn-danger bg-danger"><a class="text-white fw-semibold" href="{{ route('category.delete', $row->id) }}">Delete</a></td>
                         </tr>
                         @endforeach
                     </tbody>

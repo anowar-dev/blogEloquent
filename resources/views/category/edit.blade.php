@@ -11,8 +11,8 @@
         <div class="row mt-5">
             <div class="col-3"></div>
             <div class="col-5 card p-4">
-                <span class="btn btn-light me-auto fw-bold text-dark">Category Edit Table</span>
-                <a class="btn btn-primary ms-auto mb-2" href="{{ route('category.index') }}">All Category</a>
+                <span class="bg-light fw-bold text-dark py-2">Category Edit Table</span>
+                <a class="btn btn-primary me-auto my-4" href="{{ route('category.index') }}">All Category</a>
                 <form method="POST" action="{{ route('category.update', $data->id) }}">
                     @csrf
                     <div class="mb-3">
