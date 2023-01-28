@@ -28,7 +28,7 @@
                             <th class="bg-light fw-bold">{{ ++$key }}</th>
                             <td>{{ $row->category_name }}</td>
                             <td>{{ $row->category_slug }}</td>
-                            <td class="btn btn-info bg-info mx-3"><a class="text-dark fw-semibold" href="">Edit</a></td>
+                            <td class="btn btn-info bg-info mx-3"><a class="text-dark fw-semibold" href="{{ route('category.edit', $row->id) }}">Edit</a></td>
                             <td class="btn btn-danger bg-danger"><a class="text-white fw-semibold" href="">Delete</a></td>
                         </tr>
                         @endforeach
